@@ -22,15 +22,13 @@ chains.
 class NetworkParams(TypedDict):
     max_allowed_modules: int
     max_registrations_per_block: int
-    target_registrations_interval: int  #  in blocks
-    target_registrations_per_interval: int
+    adjustment_interval: int  #  in blocks
+    expected_registrations: int
     unit_emission: int
     max_name_length: int
     min_name_length: int
-    burn_rate: int
     min_burn: int  # min burn to register
     max_burn: int  # max burn to register
-    min_stake: int
     min_weight_stake: int
     max_allowed_subnets: int
     adjustment_alpha: int
@@ -51,7 +49,6 @@ class SubnetParams(TypedDict):
     max_allowed_uids: int
     max_allowed_weights: int
     min_allowed_weights: int
-    max_stake: int
     max_weight_age: int
     min_stake: int
     name: str

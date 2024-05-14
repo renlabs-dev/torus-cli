@@ -87,7 +87,6 @@ def propose_globally(
     target_registrations_per_interval: int = typer.Option(None),
     unit_emission: int = typer.Option(None),
     max_name_length: int = typer.Option(None),
-    burn_rate: int = typer.Option(None),
     min_burn: int = typer.Option(None),
     max_burn: int = typer.Option(None),
     min_stake: int = typer.Option(None),
