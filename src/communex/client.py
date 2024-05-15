@@ -784,7 +784,7 @@ class CommuneClient:
                 )
 
             extrinsic = substrate.create_signed_extrinsic(  # type: ignore
-                call=call, keypair=key  # type: ignore
+                call=call, keypair=key, era={'period': 100}  # type: ignore
             )  # type: ignore
             response = substrate.submit_extrinsic(
                 extrinsic=extrinsic,
@@ -928,7 +928,7 @@ class CommuneClient:
         params = {"dest": dest, "value": amount}
 
         return self.compose_call(
-            module="Balances", fn="transfer", params=params, key=key
+            module="Balances", fn="transfer_keep_alive", params=params, key=key
         )
 
     def transfer_multiple(
