@@ -49,8 +49,12 @@ class ComxSettings(BaseSettings):
         "wss://commune-api-node-31.communeai.net",
     ]
     TESTNET_NODE_URLS: list[str] = [
-        "wss://testnet-commune-api-node-0.communeai.net"]
-
+        "wss://testnet-commune-api-node-0.communeai.net",
+        "wss://testnet-commune-api-node-1.communeai.net",
+        "wss://testnet-commune-api-node-2.communeai.net",
+        "wss://testnet-commune-api-node-3.communeai.net",
+        "wss://testnet-commune-api-node-4.communeai.net",
+        ]
 
 def get_node_url(
     comx_settings: ComxSettings | None = None, *, use_testnet: bool = False
