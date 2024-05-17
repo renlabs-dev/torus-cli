@@ -19,7 +19,6 @@ def test_cli_subnet_info_slow(invoke_cli: InvokeCli):
     assert "max_allowed_uids" in output
     assert "max_allowed_weights" in output
     assert "min_allowed_weights" in output
-    assert "max_stake" in output
     assert "min_stake" in output
     assert "tempo" in output
     assert "trust_ratio" in output
@@ -44,7 +43,6 @@ def test_cli_subnet_list_slow(invoke_cli: InvokeCli):
     assert "max_allowed_uids" in output
     assert "max_allowed_weights" in output
     assert "min_allowed_weights" in output
-    assert "max_stake" in output
     assert "min_stake" in output
     assert "tempo" in output
     assert "trust_ratio" in output

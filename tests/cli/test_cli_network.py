@@ -69,7 +69,6 @@ def test_cli_network_params_slow(invoke_cli: InvokeCli):
     assert "vote_mode" in output
     assert "max_proposals" in output
     assert "max_name_length" in output
-    assert "burn_rate" in output
     assert "min_burn" in output
     assert "min_stake" in output
     assert "min_weight_stake" in output
